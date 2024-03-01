@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+</head>
+<body>
+    <center>
+    <table border="3px">
+        <tr>
+            <th>emp_no</th>
+            <th>emp_name</th>
+            <th>emp_salary</th>
+            <th>emp_email</th>
+            <th>dept_no</th>
+        </tr>
+        {% for eo in employee %}
+        <tr>
+        <td>{{eo.emp_no}}</td>
+         <td>{{eo.emp_name}}</td>
+         <td>{{eo.emp_salary}}</td>
+         <td>{{eo.emp_email}}</td>
+         <td>{{eo.dept_no}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</center>
+</body>
+</html>
